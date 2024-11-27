@@ -33,10 +33,10 @@ getstatusoutput(f"wget {photo1} -O 'photo.jpg'")
 photo = "photo.jpg"
 
 credit ="😎𝖘:)™~" 
-OWNER = int(os.environ.get("OWNER", 2032347579))
+OWNER = int(os.environ.get("OWNER", 2052075731))
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "2032347579 5702090016").split()):  
+    for x in (os.environ.get("ADMINS", "2052075731 7246728595").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
