@@ -50,7 +50,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))    
 async def account_login(bot: Client, m: Message):    
-    editable = await message.reply_photo(photo="https://images.app.goo.gl/KA14FzkZk3aCTaUi8", await m.reply_text("**𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 🌟 𝐈 AM UPLOADER BOT 🕹️ \n\n➠ 📛 Can Extract Videos & Pdf Form Your Text File and Upload to Telegram \n\n➠ 🍁 𝐔𝐬𝐞 /tarain 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 \n\nFor Stop ⛔ working process ➡️ /stop ** \n\n<pre>➠ 💗 𝐌𝐚𝐝𝐞 𝐁𝐲: 🔰 『𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐘™ 🥷🐦‍🔥』 🌎</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
+    editable = await message.reply_photo(photo="https://images.app.goo.gl/xCRynADjhVfFCveR7", await m.reply_text("**𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 🌟 𝐈 AM UPLOADER BOT 🕹️ \n\n➠ 📛 Can Extract Videos & Pdf Form Your Text File and Upload to Telegram \n\n➠ 🍁 𝐔𝐬𝐞 /tarain 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 \n\nFor Stop ⛔ working process ➡️ /stop ** \n\n<pre>➠ 💗 𝐌𝐚𝐝𝐞 𝐁𝐲: 🔰 『𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐘™ 🥷🐦‍🔥』 🌎</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
 @bot.on_message(filters.command("Stop"))    
 async def restart_handler(_, m):    
