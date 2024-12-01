@@ -244,9 +244,9 @@ async def account_login(bot: Client, m: Message):
 
             try:
   
-                cc = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res}):)**.mp4\n\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 『𝗧ᴀʀᴀɪɴ™🥷🐦‍🔥』**\n\n'    
-                ccyt = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res}):)**.mp4\n\n**🕹️ 𝗬ᴏᴜ𝗧ᴜʙᴇ 𝗟ɪɴᴋ* »**\n**{url}\n\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 『𝗧ᴀʀᴀɪɴ™🥷🐦‍🔥』**\n\n'
-                cc1 = f'**[ 📁 ] 𝗣ᴅғ ɪᴅ. ➤ {str(count).zfill(3)}\n**🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** ➤ {name1} **({res}):)**.pdf \n\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** ➤**\n**{b_name} </pre>**\n\n**🍁 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ ➤ 『𝗧ᴀʀᴀɪɴ™🥷🐦‍🔥』**\n'    
+                cc = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res}):)**.mp4\n\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »<pre>**\n**<pre>{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 『𝗧ᴀʀᴀɪɴ™🥷🐦‍🔥』**\n\n'    
+                ccyt = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res}):)**.mp4\n\n**🕹️ 𝗬ᴏᴜ𝗧ᴜʙᴇ 𝗟ɪɴᴋ* »**\n**{url}\n\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »<pre>**\n**<pre>{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 『𝗧ᴀʀᴀɪɴ™🥷🐦‍🔥』**\n\n'
+                cc1 = f'**[ 📁 ] 𝗣ᴅғ ɪᴅ. ➤ {str(count).zfill(3)}\n**🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** ➤ {name1} **({res}):)**.pdf \n\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** ➤<pre>**\n**<pre>{b_name} </pre>**\n\n**🍁 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ ➤ 『𝗧ᴀʀᴀɪɴ™🥷🐦‍🔥』**\n'    
                 if "drive" in url:    
                     try:    
                         ka = await helper.download(url, name)    
