@@ -48,10 +48,20 @@ bot = Client("bot",
    api_hash= "e5d187c6c7a0919ccb8866f76f655701"
 )
 
-@bot.on_message(filters.command(["start"]))    
-async def account_login(bot: Client, m: Message):    
-    editable = await m.reply_text("**𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 🌟 𝐈 AM UPLOADER BOT 🕹️ \n\n➠ 📛 Can Extract Videos & Pdf Form Your Text File and Upload to Telegram \n\n➠ 🍁 𝐔𝐬𝐞 /tarain 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 \n\nFor Stop ⛔ working process ➡️ /stop ** \n\n<pre>➠ 💗 𝐌𝐚𝐝𝐞 𝐁𝐲: 🔰 『𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐘™ 🥷🐦‍🔥』 🌎</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
-
+@bot.on_message(filters.command(["start"]))
+async def start_command(bot, message):
+     chat_id = message.chat.id
+     await send_random_photo(bot, chat_id)
+ async def send_random_photo(bot, chat_id):
+     width = random.randint(1100, 1250)
+     height = random.randint(600, 800)
+     await bot.send_photo(
+         chat_id=chat_id,
+         photo=f"https://picsum.photos/{width}/{height}.jpg",
+         caption=f"𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 🌟 𝐈 AM UPLOADER BOT 🕹️ \n\n➠ 📛 Can Extract Videos & Pdf Form Your Text File and Upload to Telegram \n\n➠ 🍁 𝐔𝐬𝐞 /tarain 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 \n\nFor Stop ⛔ working process ➡️ /stop  \n\n<pre>➠ 💗 𝐌𝐚𝐝𝐞 𝐁𝐲: 🔰 『𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐘™ 🥷🐦‍🔥』 🌎</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-\n",
+         reply_markup=keyboard
+     )
+     
 @bot.on_message(filters.command("Stop"))    
 async def restart_handler(_, m):    
     await m.reply_text("**🚯 ꜱᴛᴏᴘᴘᴇᴅ 🚯**", True)    
