@@ -51,10 +51,6 @@ bot = Client("bot",
 @bot.on_message(filters.command(["start"]))
 async def start_command(bot, message):
      chat_id = message.chat.id
-     await send_random_photo(bot, chat_id)
-async def send_random_photo(bot, chat_id):
-     width = random.randint(1100, 1250)
-     height = random.randint(600, 800)
      await bot.send_photo(
          chat_id=chat_id,
          photo=f"https://picsum.photos/{width}/{height}.jpg",
