@@ -52,7 +52,7 @@ bot = Client("bot",
 async def start_command(bot, message):
      chat_id = message.chat.id
      await send_random_photo(bot, chat_id)
- async def send_random_photo(bot, chat_id):
+async def send_random_photo(bot, chat_id):
      width = random.randint(1100, 1250)
      height = random.randint(600, 800)
      await bot.send_photo(
