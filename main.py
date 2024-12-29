@@ -283,7 +283,7 @@ async def account_login(bot: Client, m: Message):
                         continue
                      
                 else:
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🐉𝗤ᴜᴀʟɪᴛʏ » {raw_text2}`\n🌿**Url**» {url}ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️]**\n**🙏𝗝⃠ᴀɪ 𝗦⃠ʜʀᴇᴇ 𝗥⃠ᴀᴍ🙏 **"    
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🐉𝗤ᴜᴀʟɪᴛʏ » {raw_text2}`\n🌿**Url**» {url}\n\nᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️]**\n**🙏𝗝⃠ᴀɪ 𝗦⃠ʜʀᴇᴇ 𝗥⃠ᴀᴍ🙏 **"    
                     prog = await m.reply_text(Show)    
                     res_file = await helper.download_video(url, cmd, name)    
                     filename = res_file    
