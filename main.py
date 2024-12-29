@@ -244,9 +244,9 @@ async def account_login(bot: Client, m: Message):
 
             try:
   
-                cc = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**<pre>🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}<pre>\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res})**.mp4\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 🇮🇳 𝗝ᴀɪ 𝗦ʜʀᴇᴇ 𝗥ᴀᴍ 🇮🇳**\n\n'    
-                ccyt = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**<pre>🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}<pre>\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res})**.mp4\n\n**🕹️ 𝗬ᴏᴜ𝗧ᴜʙᴇ 𝗟ɪɴᴋ »**\n**{url}\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 🇮🇳 𝗝ᴀɪ 𝗦ʜʀᴇᴇ 𝗥ᴀᴍ 🇮🇳**\n\n'
-                cc1 = f'**[ 📁 ] 𝗣ᴅғ ɪᴅ. » {str(count).zfill(3)}\n**<pre>🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}<pre>\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1} **({res})**.pdf \n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 🇮🇳 𝗝ᴀɪ 𝗦ʜʀᴇᴇ 𝗥ᴀᴍ 🇮🇳**\n'    
+                cc = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**<pre>🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}<pre>**\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res})**.mp4\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 🇮🇳 𝗝ᴀɪ 𝗦ʜʀᴇᴇ 𝗥ᴀᴍ 🇮🇳**\n\n'    
+                ccyt = f'**[ 🎥 ] 𝗟ᴇᴄ ɪᴅ. » {str(count).zfill(3)}\n**<pre>🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}<pre>**\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1}**({res})**.mp4\n\n**🕹️ 𝗬ᴏᴜ𝗧ᴜʙᴇ 𝗟ɪɴᴋ »**\n**{url}\n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 🇮🇳 𝗝ᴀɪ 𝗦ʜʀᴇᴇ 𝗥ᴀᴍ 🇮🇳**\n\n'
+                cc1 = f'**[ 📁 ] 𝗣ᴅғ ɪᴅ. » {str(count).zfill(3)}\n**<pre>🌟 𝗔ᴘᴘ 𝗡ᴀᴍᴇ** » {MR}<pre>**\n**\n**🔰 𝗧ɪᴛᴛʟᴇ** » {name1} **({res})**.pdf \n**<pre>📲 𝗕ᴀᴛᴄʜ 𝗡ᴀᴍᴇ** »**\n\n**{b_name} </pre>**\n\n**📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » 🇮🇳 𝗝ᴀɪ 𝗦ʜʀᴇᴇ 𝗥ᴀᴍ 🇮🇳**\n'    
                 if "drive" in url:    
                     try:    
                         ka = await helper.download(url, name)    
