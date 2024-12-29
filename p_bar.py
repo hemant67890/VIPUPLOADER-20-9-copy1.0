@@ -94,11 +94,11 @@ async def progress_bar(current, total, reply, start):
             bar_length = 11
             completed_length = int(current * bar_length / total)
             remaining_length = bar_length - completed_length
-            progress_bar = "🟢" * completed_length + "🔴" * remaining_length
+            progress_bar = "▰" * completed_length + "▱" * remaining_length
             
             try:
-                await reply.edit(f'`╔════❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱══════⊱ \n║╭━━━━━━━━━━━━━━━➣\n║┣ ⚡[{progress_bar}]\n║┣ 🗂️ LOADED : {perc}\n║┣ 🚀 SPEED : {sp} \n║┣ 📟 PROCESSED : {cur}\n║┣ 💾 SIZE : {tot}\n║┣ 🧭 ETA : {eta} \n║╰━━━━━━━━━━━━━━━➣\n╚═⌈ 𝘽𝙤𝙩 𝙈𝙖𝙙𝙚 𝙗𝙮 😎『𝐓ᴀʀᴀɪɴ™🥷🐦‍🔥』⌋─━━➣⚡⌋`') 
-         #       await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar}\n┣⪼ 🗂️ LOADED : {perc}\n┣⪼ 🚀 SPEED : {sp} \n┣⪼ 📟 PROCESSED : {cur}\n┣⪼ 💾 SIZE : {tot}\n┣⪼ 🧭 ETA : {eta} \n╰━⌈  𝘽𝙤𝙩 𝙈𝙖𝙙𝙚 𝙗𝙮 😎『𝐓ᴀʀᴀɪɴ™🥷🐦‍🔥』⌋─━━➣`\n') 
+                await reply.edit(f'`╭────💥 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗥 💥────╮   \n├⚡ {progress_bar} \n├🧲 𝗦𝗶𝘇𝗲 ➠ {tot} \n├🚀 𝗦𝗽𝗲𝗲𝗱 ➠ {sp} \n├🗂️ 𝗟𝗼𝗮𝗱𝗲𝗱 ➠ {perc} \n├📟 𝗣𝗿𝗼𝗴𝗿𝗲𝘀𝘀 ➠ {cur} \n├🧭 𝗘𝗧𝗔 ➠ {eta}\n╰── 『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️ ──╯`') 
+         #       await reply.edit(f'`╭────💥 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗥 💥────╮   \n├⚡ {progress_bar} \n├🧲 𝗦𝗶𝘇𝗲 ➠ {tot} \n├🚀 𝗦𝗽𝗲𝗲𝗱 ➠ {sp} \n├🗂️ 𝗟𝗼𝗮𝗱𝗲𝗱 ➠ {perc} \n├📟 𝗣𝗿𝗼𝗴𝗿𝗲𝘀𝘀 ➠ {cur} \n├🧭 𝗘𝗧𝗔 ➠ {eta}\n╰── 『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️ ──╯`') 
             except FloodWait as e:
                 time.sleep(e.x)
 
