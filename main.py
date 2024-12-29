@@ -300,6 +300,7 @@ async def account_login(bot: Client, m: Message):
                 
     except Exception as e:
         await m.reply_text(e)
+    await m.reply_text("** ʟɪsᴛ ɪɴᴅᴇx ᴏᴜᴛ ᴏғ ʀᴀɴɢᴇ **")
     await m.reply_text("** 🔰 Sᴜᴄᴄᴇsғᴜʟʟʏ Dᴏᴡɴʟᴏᴀᴅᴇᴅ Aʟʟ Lᴇᴄᴛᴜʀᴇs...! 🔰 **")
     
 bot.run()
